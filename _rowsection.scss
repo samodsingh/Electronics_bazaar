@@ -1,0 +1,189 @@
+.container{
+    padding: 0 5px;
+   @include media_phone (){
+    font-size: 12px;
+   }
+    &__row1{
+        // border-bottom: 2px solid rgb(207, 206, 206);
+        text-align: center;
+        padding-bottom: 7px;
+        
+        &--lists{
+            display: flex;
+            padding: 10px;
+           li{
+            list-style: none;
+            margin-left: 5px;
+            font-size: 13px;
+            
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+            }
+           }
+           
+        }
+        .hr--line{           
+            @include flexbox(flex, center, center);
+
+            p{
+                width: 100px;                
+                height: 7px;
+                background-color: #1a4f94;
+            }
+            &--left{
+                @include hrLine(48%, 1);
+             
+            }
+            &--right{
+                @include hrLine(48%, 1);
+            }
+        }
+    }
+
+    &__row2{
+        width: 100%;
+        padding: 10px;      
+      
+        &--productSection{
+            height: 300px;
+            padding: 10px;
+            @include media_phone(){
+                height: 200px;
+            }
+            p{
+                @include position(relative, 10%, 20%);                
+                font-size: 14px;
+                width: 300px;
+                @include media_phone (){
+                    @include position(relative, 10%, 0%);                
+
+                } 
+            }
+            &--paymentImage{
+                width: 50%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;                
+                @include position(relative, 25%, 0); 
+                @include media_phone (){
+                    width: 100%
+                } 
+                img{
+                    width: 100%;  
+                    height: 60px;
+                }        
+               
+            }
+        }
+    }
+}
+@import "./media";
+.footerSection{
+    width: 100%;
+
+    &__row{
+        display: flex;   
+        justify-content: center;    
+        @include media_tab (){
+            flex-direction: column;
+        } 
+        .col{
+            width: 100%;
+        }
+        &--signup{
+            padding:20px ;
+            height: 180px;
+            line-height: 100px;
+            text-align: center;
+            background-color: $footer_bg;
+            // width: 450px;
+
+            h3{
+                color: $textcolor;
+                font-weight: 500;
+            }
+
+            .box_button{
+                border: 1px solid gray;              
+                @include flexbox(flex, space-between, center);
+                border-radius: 50px;
+                background-color: whitesmoke;
+                input{
+                    outline: none;
+                    border: none;
+                    border-radius: 50px;
+                    padding: 10px;
+                    width: 100%;    
+                  
+
+                }
+                button{
+                    width: 80px;
+                    border: 1px solid gray;
+                    border: none;                    
+                    border-radius: 0 40px 40px 0;
+                    background-color: yellow;
+                    cursor: pointer;
+                    padding: 10px;
+                    @include media_phone(){
+                        padding: 8px;
+                    }
+
+                }
+            }
+
+        }
+        &--follow{
+            // border: 2px solid green;
+            padding:20px ;
+            height: 180px;
+            line-height: 80px;
+            text-align: center;
+            background-color: $footer_top_bg;
+            // width: 450px;
+            h3{
+                color: $textcolor;
+                font-weight: 500;
+            }
+        }
+        &--download{
+            // border: 2px solid green;
+            padding:20px ;
+            height: 180px;
+            line-height: 80px;
+            text-align: center;
+            background-color: $footer_bg;
+            // width: 450px;
+            h3{
+                color: $textcolor;
+                font-weight: 500;
+            }
+        }
+       
+
+    }
+    .footer__about-terms{
+        text-align: center;
+        P{
+            width: 100%;
+            height: 60px;
+            background-color: $footer_top_bg;
+            padding-top: 20px;
+            color: $textcolor;
+            font-size: 14px;
+            a{
+                text-decoration: none;
+                color: $textcolor;
+            }
+        }
+    }
+    .footer__copyRight{
+        background-color: $footer_bg;
+        padding: 15px;
+        text-align: center;
+        color: $textcolor;
+        font-size: 13px;
+    }
+}

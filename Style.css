@@ -1,0 +1,343 @@
+* {
+  font-family: Arial, sans-serif !important;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #1a4f94;
+}
+
+.top__header {
+  width: 100%;
+  height: 33px;
+}
+@media screen and (max-width: 776px) {
+  .top__header {
+    display: none;
+  }
+}
+.top__header--links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0px;
+}
+.top__header--links--item {
+  list-style: none;
+  border-right: 1px solid white;
+  padding: 5px;
+  margin-left: 8px;
+}
+.top__header--links--item:hover {
+  color: yellow;
+}
+.top__header--links--item a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 13px;
+}
+.top__header--links--item a:hover {
+  color: yellow;
+}
+.top__header--links .last {
+  border: none;
+}
+
+.headerbuttom {
+  border-top: 1px solid #ffde13;
+  padding: 10px;
+  margin-top: 4px;
+}
+.headerbuttom__flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10px;
+  color: whitesmoke;
+  width: 100%;
+}
+@media screen and (max-width: 776px) {
+  .headerbuttom__flex {
+    flex-direction: column;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .headerbuttom__flex {
+    flex-direction: column;
+    width: 300px;
+  }
+}
+.headerbuttom__flex--logo {
+  display: flex;
+}
+.headerbuttom__flex--logo img {
+  border-right: 2px solid white;
+  margin: 5px;
+  padding: 5px;
+}
+.headerbuttom__flex--logo div {
+  padding: 5px;
+  margin: 5px;
+}
+.headerbuttom__flex--searchbox {
+  display: flex;
+  width: 400px;
+  margin: auto;
+}
+@media screen and (max-width: 776px) {
+  .headerbuttom__flex--searchbox {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .headerbuttom__flex--searchbox {
+    width: 300px;
+  }
+}
+.headerbuttom__flex--searchbox input {
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  padding: 8px;
+}
+.headerbuttom__flex--contact {
+  line-height: 30px;
+}
+.headerbuttom__flex--contact h3 {
+  color: #ffde13;
+}
+
+.nav {
+  border-bottom: 2px solid rgb(175, 173, 173);
+  height: 60px;
+  width: 100%;
+}
+@media screen and (max-width: 776px) {
+  .nav {
+    display: none;
+  }
+}
+.nav--list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  overflow: scroll;
+}
+.nav--list--item {
+  display: list-item;
+  list-style: none;
+  padding: 6px;
+  border: 1px solid transparent;
+}
+.nav--list--item:hover {
+  border: 1px solid rgb(116, 115, 115);
+  border-radius: 6px;
+  background-color: rgb(81, 81, 248);
+}
+.nav--list--item:hover a {
+  color: whitesmoke;
+}
+.nav--list--item a {
+  display: list-item;
+  text-decoration: none;
+  color: #1A4F94;
+  width: 135px;
+  text-align: center;
+}
+
+.container {
+  padding: 0 5px;
+}
+@media screen and (max-width: 450px) {
+  .container {
+    font-size: 12px;
+  }
+}
+.container__row1 {
+  text-align: center;
+  padding-bottom: 7px;
+}
+.container__row1--lists {
+  display: flex;
+  padding: 10px;
+}
+.container__row1--lists li {
+  list-style: none;
+  margin-left: 5px;
+  font-size: 13px;
+}
+.container__row1--lists li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.container__row1 .hr--line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__row1 .hr--line p {
+  width: 100px;
+  height: 7px;
+  background-color: #1a4f94;
+}
+.container__row1 .hr--line--left {
+  width: 48%;
+  height: 1px;
+  background-color: rgb(167, 165, 165);
+}
+.container__row1 .hr--line--right {
+  width: 48%;
+  height: 1px;
+  background-color: rgb(167, 165, 165);
+}
+.container__row2 {
+  width: 100%;
+  padding: 10px;
+}
+.container__row2--productSection {
+  height: 300px;
+  padding: 10px;
+}
+@media screen and (max-width: 450px) {
+  .container__row2--productSection {
+    height: 200px;
+  }
+}
+.container__row2--productSection p {
+  position: relative;
+  top: 10%;
+  left: 20%;
+  font-size: 14px;
+  width: 300px;
+}
+@media screen and (max-width: 450px) {
+  .container__row2--productSection p {
+    position: relative;
+    top: 10%;
+    left: 0%;
+  }
+}
+.container__row2--productSection--paymentImage {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 25%;
+  left: 0;
+}
+@media screen and (max-width: 450px) {
+  .container__row2--productSection--paymentImage {
+    width: 100%;
+  }
+}
+.container__row2--productSection--paymentImage img {
+  width: 100%;
+  height: 60px;
+}
+
+.footerSection {
+  width: 100%;
+}
+.footerSection__row {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 776px) {
+  .footerSection__row {
+    flex-direction: column;
+  }
+}
+.footerSection__row .col {
+  width: 100%;
+}
+.footerSection__row--signup {
+  padding: 20px;
+  height: 180px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #414040;
+}
+.footerSection__row--signup h3 {
+  color: whitesmoke;
+  font-weight: 500;
+}
+.footerSection__row--signup .box_button {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  background-color: whitesmoke;
+}
+.footerSection__row--signup .box_button input {
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  width: 100%;
+}
+.footerSection__row--signup .box_button button {
+  width: 80px;
+  border: 1px solid gray;
+  border: none;
+  border-radius: 0 40px 40px 0;
+  background-color: yellow;
+  cursor: pointer;
+  padding: 10px;
+}
+@media screen and (max-width: 450px) {
+  .footerSection__row--signup .box_button button {
+    padding: 8px;
+  }
+}
+.footerSection__row--follow {
+  padding: 20px;
+  height: 180px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #242323;
+}
+.footerSection__row--follow h3 {
+  color: whitesmoke;
+  font-weight: 500;
+}
+.footerSection__row--download {
+  padding: 20px;
+  height: 180px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #414040;
+}
+.footerSection__row--download h3 {
+  color: whitesmoke;
+  font-weight: 500;
+}
+.footerSection .footer__about-terms {
+  text-align: center;
+}
+.footerSection .footer__about-terms P {
+  width: 100%;
+  height: 60px;
+  background-color: #242323;
+  padding-top: 20px;
+  color: whitesmoke;
+  font-size: 14px;
+}
+.footerSection .footer__about-terms P a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.footerSection .footer__copyRight {
+  background-color: #414040;
+  padding: 15px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 13px;
+}/*# sourceMappingURL=Style.css.map */

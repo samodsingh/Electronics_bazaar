@@ -1,0 +1,146 @@
+@import "./mixins";
+*{
+    font-family: Arial,sans-serif!important;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.header{
+    background-color: $header_bg;
+   
+}
+@import "./media";
+.top__header{
+    width: 100%;
+    height: 33px;
+    @include media_tab(){
+        display: none;
+    }
+    &--links{        
+        @include flexbox(flex, center,center);
+        padding: 4px 0px;
+        &--item{
+            list-style: none;
+            border-right:  1px solid white;
+            padding: 5px;
+            margin-left: 8px;
+           
+            &:hover{
+                color: yellow;
+            }
+            a{
+                color: $textcolor;
+                text-decoration: none;
+                font-size: 13px;
+                &:hover{
+                    color: yellow;
+                }
+            }
+        }
+        .last{
+            border: none;
+        }
+    }
+}
+@import "./media";
+.headerbuttom{
+    border-top: 1px solid $contact_color;
+    padding: 10px;
+    margin-top: 4px;
+    &__flex{
+        // border: 2px solid red;       
+        @include flexbox(flex, space-evenly, center);
+        padding: 0 10px;
+        color: $textcolor;
+        width: 100%;
+        @include media_tab (){
+            flex-direction: column;
+            width: 300px;
+        }
+        @include media_phone (){
+            flex-direction: column;
+            width: 300px;
+        } 
+
+        &--logo{
+            display: flex;
+            img{
+                border-right: 2px solid white;
+                margin: 5px;
+                padding: 5px;
+            }
+            div{
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+        &--searchbox{
+            display: flex;
+            width: 400px;
+            margin: auto; 
+            @include media_tab (){
+                width: 400px;
+            }
+            @include media_phone (){
+                width: 300px;
+            }
+           
+            input{
+                width: 100%;
+                height: 40px;
+                border-radius: 50px;
+                outline: none;
+                border: none;                
+                padding: 8px;
+            }
+        }
+        &--contact{
+            line-height: 30px;
+            
+            h3{
+                color: $contact_color;
+            }
+        }
+    }
+}
+
+.nav{
+    border-bottom: 2px solid rgb(175, 173, 173);    
+     height: 60px;
+    width: 100%;
+    @include media_tab(){
+        display: none
+    }
+    &--list{              
+        @include flexbox(flex, space-around, center);
+        padding: 10px;
+        overflow: scroll;
+        
+        &--item{
+            display: list-item;
+            list-style: none;
+            padding: 6px;
+            border: 1px solid transparent;
+
+
+            &:hover{
+                border: 1px solid rgb(116, 115, 115);
+                border-radius: 6px;
+                background-color: rgb(81, 81, 248);
+                a{
+                    color: $textcolor;
+
+                }
+
+            }
+            a{
+                display: list-item;
+                text-decoration: none;
+                color: #1A4F94;   
+                width: 135px;
+                text-align: center;                     
+            }
+        }
+
+    }
+
+}

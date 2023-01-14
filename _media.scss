@@ -1,0 +1,21 @@
+$phone_width : 450;
+@mixin width_height($phone_width){
+    width: $phone_width + px ;
+    text-align: center;
+} 
+@mixin media_desktop (){
+    @media screen and (max-width : 986px){   
+        @content;
+    }
+}
+@mixin media_tab (){
+    @media screen and (max-width : 776px){   
+        @content;
+    }
+}
+@mixin media_phone (){
+    @media screen and (max-width : 450px){   
+        @content;
+    }
+}
+
